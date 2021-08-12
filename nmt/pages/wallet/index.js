@@ -11,12 +11,12 @@ const displayWallet = () =>
 
 	if ( typeof ( window ) !== 'undefined' ) 
 	{
-		const pK = Uint8Array.from( JSON.parse( localStorage.getItem( 'pk' ) ).data )
-		const myWallet = new Wallet( new Keypair( pK ) )
+		//const pK = Uint8Array.from( JSON.parse( localStorage.getItem( 'pk' ) ).data )
+		// const myWallet = new Wallet( new Keypair( pK ) )
 		const qr = () =>
 		{
 			// With promises
-			QRCode.toCanvase(document.getElementById( '__std' ), myWallet.address, function ( error) 
+			QRCode.toCanvase(document.getElementById( '__std' ), window.$myWallet.address, function ( error) 
 			{
 				if ( error ) console.log( error )
 				console.log( 'success')
@@ -24,21 +24,25 @@ const displayWallet = () =>
 		}
 
 		return (
-			<div>
-				<h1>myWallet</h1>
-				<h4>{myWallet.address}</h4>
-				<canvas id="__std"></canvas>
-				{qr()}
-			</div>
+			<>
+				<div>
+					<h1>myWallet</h1>
+					<h4>{window.$myWallet.address}</h4>
+					<div>
+						<h2>BALANCE</h2>
+						<p>{window.$NMT.getBalance( window.$myWallet.address )}</p>
+					</div>
+				</div>
+				<div>
+					<table></table>
+				</div>
+			</>
 		)
 	}
 	else
 	{
 		return (
-			<div>
-				<h1>myWallet</h1>
-
-			</div>
+			<p>error</p>
 		)
 	}
 }
