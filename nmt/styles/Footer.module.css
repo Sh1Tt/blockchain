@@ -1,0 +1,54 @@
+.container
+{
+	display: grid;
+	justify-content: center;
+	width: 100%;
+	min-height: 800px;
+	height: max-content;
+	background-color: rgba( 37, 38, 37, .71 );
+	margin-top: 8rem;
+
+	background-color: rgba( 135, 214, 254, .86 );
+	background-image: linear-gradient( -13deg, rgba( 8, 7, 6, .88 ), rgba( 137, 200, 234, .23 ), rgba( 245, 214, 224, .37 ), rgba( 13, 7, 9, .76 ) );
+	
+	border-bottom: 1.75rem solid rgba( 8, 8, 8, .9 );
+}
+.footnote
+{
+	width: max-content;
+	height: auto;
+	align-content: center;
+	justify-items: center;
+	font-size: 160%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+.wrapperLogo
+{
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	height: 128px;/**//*border-radius: 46%;
+	transform: scaleY(2);*/
+}
+.logo
+{
+	flex:  0 0 128px;
+	height: 128px;
+	margin: 0;
+	padding: 0;
+	box-shadow: 1px 1px 5px rgba( 34, 37, 36, .79 );
+}
+.name
+{
+	font-size: 800%;
+	color: rgba( 238, 245, 250, .83 );
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	transform: translateY(-20%);
+	text-shadow: 1px 1px 5px rgba( 34, 37, 36, .79 );
+}

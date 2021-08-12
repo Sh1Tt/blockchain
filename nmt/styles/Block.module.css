@@ -1,0 +1,53 @@
+.card
+{
+  flex: 0 0 300px;
+  height: auto;
+  min-height: 420px;
+  white-space: pre-wrap;
+  word-break: break-all;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  border-radius: .75em;
+  box-shadow: 1px 1px 5px rgba( 83, 84, 81, .20 );
+  margin: 1em;
+  align-content: stretch;
+}
+
+.card:onselect, .card:onclick
+{
+  border:  .37em solid rgba( 37, 165, 237, .63)
+}
+
+.header
+{
+  flex: 1 1 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: .375em .75em;
+  border-bottom: .15em solid rgba( 237, 165, 237, .87 );
+  margin: 0;
+}
+
+.hash
+{
+  flex: 1 1 0px;
+  min-height: 40%;
+  padding: .375em .75em;
+  /*border-bottom: .05em solid rgba( 33, 165, 237, .63 );*/
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.prop
+{
+  flex: 1 1 0px;
+  padding: .375em .75em;
+  border-top: .05em solid rgba( 33, 165, 237, .63 );
+  margin: 0;
+}
+

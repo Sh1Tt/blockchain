@@ -1,0 +1,29 @@
+{
+  "name": "nmt",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "base58encoder": "^0.2.0",
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.1.1",
+    "easyqrcodejs": "^4.4.3",
+    "elliptic": "^6.5.4",
+    "fs": "0.0.1-security",
+    "next": "11.0.1",
+    "qr-image": "^3.2.0",
+    "qrcode": "^1.4.4",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "secp256k1": "^4.0.2"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.0.1"
+  }
+}
